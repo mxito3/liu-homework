@@ -45,13 +45,8 @@ void MOVE::print()
 }
 int main()
 {
-	//我初始化的时候直接传一个长度为20的数组进去，不然不能体现溢出的
-	int arr[20] = { 0 };
-	for (int i = 0; i < 20; i++)
-	{
-		arr[i] = i;
-	}
-	MOVE move(arr, 20);
+	int arr[] = {21,63,45,87,12,84,44,97,32,55};
+	MOVE move(arr,10);
 	move.print();
 	cout << endl;
 	move.change();
